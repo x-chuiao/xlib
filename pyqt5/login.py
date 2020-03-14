@@ -1,0 +1,95 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'login.ui'
+#
+# Created by: PyQt5 UI code generator 5.14.0
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_Dialog(object):
+    def setupUi(self, Dialog):
+        Dialog.setObjectName("Dialog")
+        Dialog.resize(967, 696)
+        self.widget = QtWidgets.QWidget(Dialog)
+        self.widget.setGeometry(QtCore.QRect(90, 110, 791, 531))
+        self.widget.setObjectName("widget")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.widget)
+        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.browser_layout = QtWidgets.QVBoxLayout()
+        self.browser_layout.setObjectName("browser_layout")
+        self.url_layout = QtWidgets.QHBoxLayout()
+        self.url_layout.setObjectName("url_layout")
+        self.label_5 = QtWidgets.QLabel(self.widget)
+        self.label_5.setMaximumSize(QtCore.QSize(16777215, 31))
+        self.label_5.setObjectName("label_5")
+        self.url_layout.addWidget(self.label_5)
+        self.url = QtWidgets.QLineEdit(self.widget)
+        self.url.setMaximumSize(QtCore.QSize(16777215, 31))
+        self.url.setObjectName("url")
+        self.url_layout.addWidget(self.url)
+        self.browser_layout.addLayout(self.url_layout)
+        self.verticalLayout.addLayout(self.browser_layout)
+        self.next_btn = QtWidgets.QPushButton(Dialog)
+        self.next_btn.setGeometry(QtCore.QRect(200, 650, 93, 28))
+        self.next_btn.setObjectName("next_btn")
+        self.close_btn = QtWidgets.QPushButton(Dialog)
+        self.close_btn.setGeometry(QtCore.QRect(710, 650, 93, 28))
+        self.close_btn.setObjectName("close_btn")
+        self.label = QtWidgets.QLabel(Dialog)
+        self.label.setGeometry(QtCore.QRect(70, 70, 121, 16))
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(Dialog)
+        self.label_2.setGeometry(QtCore.QRect(420, 70, 72, 15))
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(Dialog)
+        self.label_3.setGeometry(QtCore.QRect(350, 20, 131, 16))
+        self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(Dialog)
+        self.label_4.setGeometry(QtCore.QRect(20, 20, 151, 16))
+        self.label_4.setObjectName("label_4")
+        self.cookies_dir = QtWidgets.QLineEdit(Dialog)
+        self.cookies_dir.setGeometry(QtCore.QRect(470, 20, 181, 21))
+        self.cookies_dir.setObjectName("cookies_dir")
+        self.id_path = QtWidgets.QLineEdit(Dialog)
+        self.id_path.setGeometry(QtCore.QRect(130, 20, 211, 21))
+        self.id_path.setObjectName("id_path")
+        self.id = QtWidgets.QLineEdit(Dialog)
+        self.id.setGeometry(QtCore.QRect(200, 70, 141, 21))
+        self.id.setObjectName("id")
+        self.pwd = QtWidgets.QLineEdit(Dialog)
+        self.pwd.setGeometry(QtCore.QRect(530, 70, 151, 21))
+        self.pwd.setObjectName("pwd")
+        self.save_btn = QtWidgets.QPushButton(Dialog)
+        self.save_btn.setGeometry(QtCore.QRect(460, 650, 93, 28))
+        self.save_btn.setObjectName("save_btn")
+        self.load_btn = QtWidgets.QPushButton(Dialog)
+        self.load_btn.setGeometry(QtCore.QRect(760, 60, 93, 41))
+        self.load_btn.setObjectName("load_btn")
+        self.label_6 = QtWidgets.QLabel(Dialog)
+        self.label_6.setGeometry(QtCore.QRect(660, 20, 111, 16))
+        self.label_6.setObjectName("label_6")
+        self.cookies_file_name = QtWidgets.QLineEdit(Dialog)
+        self.cookies_file_name.setGeometry(QtCore.QRect(780, 20, 113, 21))
+        self.cookies_file_name.setObjectName("cookies_file_name")
+
+        self.retranslateUi(Dialog)
+        QtCore.QMetaObject.connectSlotsByName(Dialog)
+
+    def retranslateUi(self, Dialog):
+        _translate = QtCore.QCoreApplication.translate
+        Dialog.setWindowTitle(_translate("Dialog", "登录"))
+        self.label_5.setText(_translate("Dialog", "URL:"))
+        self.next_btn.setText(_translate("Dialog", "下一个"))
+        self.close_btn.setText(_translate("Dialog", "退出"))
+        self.label.setText(_translate("Dialog", "当前登录账号:"))
+        self.label_2.setText(_translate("Dialog", "密码:"))
+        self.label_3.setText(_translate("Dialog", "cookie储存路径:"))
+        self.label_4.setText(_translate("Dialog", "账号文件路径:"))
+        self.save_btn.setText(_translate("Dialog", "保存"))
+        self.load_btn.setText(_translate("Dialog", "载入"))
+        self.label_6.setText(_translate("Dialog", "cookies文件名:"))
